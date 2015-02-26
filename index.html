@@ -10,10 +10,6 @@
 <body>
   <div class="container">
     <h2>Jonathan Trowbridge</h2>
-    <!-- <address>
-      <strong>Jonathan Trowbridge</strong><br>
-      <a href="mailto:#">Jonathan.Trowbridge@gmail.com</a>
-    </address> -->
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at enim at lorem ultrices posuere. Integer ut tristique risus. Morbi sed congue arcu, eu congue urna. Sed lacus turpis, lobortis non leo vitae, laoreet posuere tellus. Cras luctus dictum interdum. Donec posuere maximus nunc, id vulputate eros ornare non. Nullam tempus lobortis aliquam. Proin porttitor ex eu sagittis iaculis.
     </p>
@@ -24,9 +20,10 @@
         <div class="thumbnail">
           <img class="img-responsive" src="images/GameOfLifeScreensaver.png" alt="Game of Life Screensaver">
           <div class="caption">
-            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Game of Life Screensaver</a></h4>
+            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Game of Life Screensaver (C#)</a></h4>
             <p>
-              This screensaver runs a wrapped version Conway's Game of Life.
+              One of my most recent personal projects, this screensaver runs a wrapped version Conway's Game of Life. Everything
+              from the color and size of the cells to the density of the seed generation is configurable.
               The algorithm I used is the optimized algorithm discussed in <a href="http://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">Michael Abrash's Graphics Programming Black Book.</a>
             </p>
             <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
@@ -38,8 +35,13 @@
         <div class="thumbnail">
           <img class="img-responsive" src="images/Scheduler.png" alt="Operating System Scheduler">
           <div class="caption">
-            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">OS Process Scheduling Emulation</a></h4>
-            <p>Insert a brief description about the project.</p>
+            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Job Scheduling Emulation (Java)</a></h4>
+            <p>
+              This project emulates job scheduling in an operating system. Jobs can be added and removed
+              from the system. The bar at the top of the application is a snapshot where jobs
+              are located in memory. The dispatcher was implemented using the <a href="http://en.wikipedia.org/wiki/Highest_response_ratio_next">Highest response ratio next (HRRN)</a> scheduling discipline.
+              User documentation is available <a href="#">here</a>.
+            </p>
             <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
           </div>
         </div>
@@ -49,8 +51,12 @@
         <div class="thumbnail">
           <img class="img-responsive" src="images/Creature.png" alt="Creature">
           <div class="caption">
-            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Creature</a></h4>
-            <p>Insert a brief description about the project.</p>
+            <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Creature (Java)</a></h4>
+            <p>
+              The creature is part of a two-part project where students in my class created a game.
+              The requirements were to create an animated character that would roam around an environment.
+              This project uses <a href="http://jogamp.org/jogl/www/">JOGL</a>, the OpenGL binding for Java.
+            </p>
             <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
           </div>
         </div>
@@ -62,9 +68,12 @@
       <div class="thumbnail">
         <img class="img-responsive" src="images/Game.png" alt="Game">
         <div class="caption">
-          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Simple Game</a></h4>
+          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Simple Game (Java)</a></h4>
           <p>
-            This is a simple game and a simple description!
+            This was the final project for my computer graphics course. It features student generated rooms,
+            a mini-map, and multiple instances of the creature from the first part of the project.
+            The goal of the game is to shoot down the creatures. Use the mouse to look around and shoot,
+            and the keyboard to move. This project uses <a href="http://jogamp.org/jogl/www/">JOGL</a>, the OpenGL binding for Java.
           </p>
           <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
         </div>
@@ -75,9 +84,12 @@
       <div class="thumbnail">
         <img class="img-responsive" src="images/ConnectFour.png" alt="Game">
         <div class="caption">
-          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Connect Four</a></h4>
+          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Connect Four (Java)</a></h4>
           <p>
-            This is a simple connect four and a simple description!
+            This is a console based wrap around version of Connect Four. The user plays
+            against an AI opponent that is implemented using a game-tree along with <a href="http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">α–β pruning</a>.
+            The difficultly of the opponent depends upon the depth of the game tree the user specifies
+            at the beginning of the game.
           </p>
           <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
         </div>
@@ -88,9 +100,11 @@
       <div class="thumbnail">
         <img class="img-responsive" src="images/Prax.png" alt="Game">
         <div class="caption">
-          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">A* Search Algorithm</a></h4>
+          <h4><a href="https://github.com/masterwok/GameOfLife" target="_blank">Shortest Path (Java)</a></h4>
           <p>
-            This program demonstrates the A* search algorithm.
+            This project is my implementation of the <a href="http://en.wikipedia.org/wiki/A*_search_algorithm">A* search algorithm</a>.
+            This algorithm is used to find the shortest path possible while avoiding obsticles on a 2D grid. The X's represent high
+            terrain while the O's represent the path found.
           </p>
           <p><a href="#" class="btn btn-primary" role="button">View on Youtube</a></p>
         </div>
