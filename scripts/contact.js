@@ -9,44 +9,24 @@
 
     $scope.submit = function() {
 
-      // $http.post('http://formspree.io/jonathan.trowbridge@gmail.com'
-      //   , $scope.formData
-      // ).success(function(data, status, headers, config) {
-      //   $scope.showError = false;
-      //   $scope.showSuccess = true;
-      // }).error(function(data, status, headers, config) {
-      //   $scope.showSuccess = false;
-      //   $scope.showError = true;
-      // });
-
       $http({
-             url: 'http://formspree.io/jonathan.trowbridge@gmail.com',
-             method:"POST",
-             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-             transformRequest: function(obj) {
-                 var str = [];
-                 for(var p in obj)
-                 str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-                 return str.join("&");
-             },
-             data: $scope.formData
-            //  data: $scope.formData
-        });
-
-      // $http.post({
-      //   url: 'http://formspree.io/jonathan.trowbridge@gmail.com',
-      //   dataType: "json",
-      //   method: "POST",
-      //   headers: {
-      //       "Content-Type": "application/json"
-      //   }
-      // }).success(function(data, status, headers, config) {
-      //   $scope.showError = false;
-      //   $scope.showSuccess = true;
-      // }).error(function(data, status, headers, config) {
-      //   $scope.showSuccess = false;
-      //   $scope.showError = true;
-      // });
+        url: 'http://formspree.io/jonathan.trowbridge@gmail.com',
+        method:"POST",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        transformRequest: function(obj) {
+           var str = [];
+           for(var p in obj)
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+           return str.join("&");
+        },
+        data: $scope.formData
+      }).success(function(data, status, headers, config) {
+        $scope.showError = false;
+        $scope.showSuccess = true;
+      }).error(function(data, status, headers, config) {
+        $scope.showSuccess = false;
+        $scope.showError = true;
+      });
 
     };
 
