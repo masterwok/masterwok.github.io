@@ -8,9 +8,10 @@
     $scope.showSuccess = false;
 
     $scope.submit = function() {
-      $http.post('http://formspree.io/jonathan.trowbridge@gmail.com'
+      $http.post({
+        url: 'http://formspree.io/jonathan.trowbridge@gmail.com'
         , data: $scope.formData.serializeArray()
-      ).success(function(data, status, headers, config) {
+      }).success(function(data, status, headers, config) {
         $scope.showError = false;
         $scope.showSuccess = true;
       }).error(function(data, status, headers, config) {
