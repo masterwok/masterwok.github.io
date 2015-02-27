@@ -19,13 +19,17 @@
             str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
            return str.join("&");
         },
-        data: $scope.formData
+        //data: $scope.formData
+        data: {}
       }).success(function(data, status, headers, config) {
         $scope.showError = false;
         $scope.showSuccess = true;
       }).error(function(data, status, headers, config) {
           // console.dir(arguments);
-          if(status != 0) {
+          if(status == 0) {
+            $scope.showError = false;
+            $scope.showSuccess = true;
+          } else {
             $scope.showSuccess = false;
             $scope.showError = true;
           }
