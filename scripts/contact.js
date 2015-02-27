@@ -8,9 +8,21 @@
     $scope.showSuccess = false;
 
     $scope.submit = function() {
+      var tmp = [];
+      var keys = Object.keys($scope.formData);
+
+      for(var i = 0; i < keys.length; i++) {
+        tmp.push({
+          name: keys[i]
+          , value: $scope.formData[keys[i]]
+        });
+      }
+
+      console.dir(tmp);
+
 
       $http.post('http://formspree.io/jonathan.trowbridge@gmail.com'
-        , $scope.formData
+        , tmp
       ).success(function(data, status, headers, config) {
         $scope.showError = false;
         $scope.showSuccess = true;
