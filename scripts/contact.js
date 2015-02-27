@@ -1,43 +1,38 @@
 
 (function() {
-  var app = angular.module('portfolio', []);
+  var app = angular.module('portfolio', ['ui.bootstrap.showErrors']);
 
-  app.controller('ContactController', function($scope) {
-    $scope.email = null;
-    $scope.contactName = null;
-    $scope.message = null;
+  app.controller('ContactController', function($scope, $http) {
+    $scope.formData = {};
+    $scope.showError = false;
+    $scope.showSuccess = false;
 
-    this.submit = function() {
-      // action="http://formspree.io/jonathan.trowbridge@gmail.com"
-      // method="POST"
-      console.log("ng-submit hit!");
+    $scope.submit = function() {
+
+      $http.post('http://formspree.io/jonathan.trowbridge@gmail.com'
+        , $scope.formData
+      ).success(function(data, status, headers, config) {
+        console.log('error');
+        $scope.showError = false;
+        $scope.showSuccess = true;
+        $scope.formData = {};
+        $scope.$broadcast('show-errors-reset');
+      }).error(function(data, status, headers, config) {
+        console.log('error');
+        $scope.showSuccess = false;
+        $scope.showError = true;
+      });
+
     };
 
-    this.reset = function() {
-      $scope.email = null;
-      $scope.contactName = null;
-      $scope.message = null;
-      $scope.contactForm.$setPristine();
+    $scope.reset = function() {
+      $scope.formData = {};
+      $scope.$broadcast('show-errors-reset');
+      $scope.showSuccess = false;
+      $scope.showError = false;
     };
 
   });
 
-  app.directive('showErrors', [function() {
-    return {
-      restrict: "A",
-      link: function(scope, element, attrs, ctrl) {
-        var input = angular.element(element[0].querySelector('input[ng-model],textarea[ng-model]'));
-
-        if (input) {
-          scope.$watch(function() {
-            return input.hasClass('ng-invalid');
-          }, function(isInvalid) {
-            element.toggleClass('has-error', isInvalid);
-          });
-        }
-
-      }
-    };
-  }]);
 
 })();
