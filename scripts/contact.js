@@ -24,9 +24,11 @@
         $scope.showError = false;
         $scope.showSuccess = true;
       }).error(function(data, status, headers, config) {
-          console.dir(arguments);
-          $scope.showSuccess = false;
-          $scope.showError = true;
+          // console.dir(arguments);
+          if(status != 0) {
+            $scope.showSuccess = false;
+            $scope.showError = true;
+          }
       });
 
     };
