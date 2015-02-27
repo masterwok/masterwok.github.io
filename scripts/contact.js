@@ -19,8 +19,7 @@
             str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
            return str.join("&");
         },
-        //data: $scope.formData
-        data: {}
+        data: $scope.formData
       }).success(function(data, status, headers, config) {
         $scope.showError = false;
         $scope.showSuccess = true;
