@@ -22,4 +22,22 @@
 
   });
 
+  app.directive('showErrors', [function() {
+    return {
+      restrict: "A",
+      link: function(scope, element, attrs, ctrl) {
+        var input = angular.element(element[0].querySelector('input[ng-model],textarea[ng-model]'));
+
+        if (input) {
+          scope.$watch(function() {
+            return input.hasClass('ng-invalid');
+          }, function(isInvalid) {
+            element.toggleClass('has-error', isInvalid);
+          });
+        }
+
+      }
+    };
+  }]);
+
 })();
