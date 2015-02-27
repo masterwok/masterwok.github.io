@@ -24,10 +24,9 @@
         $scope.showError = false;
         $scope.showSuccess = true;
       }).error(function(data, status, headers, config) {
-        if(status != 302) {
+          console.dir(arguments);
           $scope.showSuccess = false;
           $scope.showError = true;
-        }
       });
 
     };
