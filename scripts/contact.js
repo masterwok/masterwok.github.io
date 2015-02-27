@@ -22,10 +22,15 @@
       $http({
              url: 'http://formspree.io/jonathan.trowbridge@gmail.com',
              method:"POST",
-             headers: {
-                        'Content-Type': 'application/json'
+             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+             transformRequest: function(obj) {
+                 var str = [];
+                 for(var p in obj)
+                 str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                 return str.join("&");
              },
              data: $scope.formData
+            //  data: $scope.formData
         });
 
       // $http.post({
