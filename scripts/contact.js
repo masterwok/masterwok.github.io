@@ -12,13 +12,9 @@
       $http.post('http://formspree.io/jonathan.trowbridge@gmail.com'
         , $scope.formData
       ).success(function(data, status, headers, config) {
-        console.log('error');
         $scope.showError = false;
         $scope.showSuccess = true;
-        $scope.formData = {};
-        $scope.$broadcast('show-errors-reset');
       }).error(function(data, status, headers, config) {
-        console.log('error');
         $scope.showSuccess = false;
         $scope.showError = true;
       });
