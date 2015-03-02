@@ -24,7 +24,6 @@
         $scope.showError = false;
         $scope.showSuccess = true;
       }).error(function(data, status, headers, config) {
-          // console.dir(arguments);
           if(status == 0) {
             $scope.showError = false;
             $scope.showSuccess = true;
