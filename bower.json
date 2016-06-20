@@ -1,0 +1,24 @@
+{
+  "name": "Resume",
+  "authors": [
+    "Jonathan Trowbridge <Jonathan.Trowbridge@gmail.com>"
+  ],
+  "description": "My resume",
+  "main": "index.html",
+  "keywords": [
+    "Resume"
+  ],
+  "license": "MIT",
+  "homepage": "masterwok.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gameoflifejs": "*"
+  }
+}

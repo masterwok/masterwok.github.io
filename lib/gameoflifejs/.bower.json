@@ -1,0 +1,39 @@
+{
+  "name": "gameoflifejs",
+  "authors": [
+    "Jonathan Trowbridge <Jonathan.Trowbridge@gmail.com>"
+  ],
+  "description": "Optimized game of life algorithm discussed in Michael Abrash's Graphics Programming Black Book",
+  "main": "dist/gameOfLife.js",
+  "keywords": [
+    "GameOfLife",
+    "Javascript",
+    "Vanilla"
+  ],
+  "license": "MIT",
+  "homepage": "masterwok.github.io",
+  "ignore": [
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".gitattributes",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md",
+    "demo.html"
+  ],
+  "_release": "d9c5fc8f8a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d9c5fc8f8a49aa5cbaa502f78dd27d6af60b142f"
+  },
+  "_source": "https://github.com/masterwok/GameOfLifeJS.git",
+  "_target": "*",
+  "_originalSource": "gameoflifejs",
+  "_direct": true
+}
