@@ -13,7 +13,8 @@ body {
     overflow-x: hidden;
 }
 
-section.module:first-child .parallax-container {
+section.module.parallax-1 .parallax-container {
+    color: red !important;
     position: absolute;
     top: 40%;
     left: 0;
@@ -37,7 +38,6 @@ section.module p:last-child {
 }
 
 section.module.parallax {
-    /*height: 600px;*/
     height: 100vh;
     background-position: 50% 50%;
     background-repeat: no-repeat;

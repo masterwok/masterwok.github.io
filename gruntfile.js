@@ -4,14 +4,10 @@ module.exports = function(grunt) {
 
     var config = {
         jsFiles: [
-            'lib/wow/dist/wow.min.js'
-            , 'lib/gameoflifejs/dist/gameOfLife.min.js'
+            'scripts/main.js'
         ]
         , cssFiles: [
             'css/site.css'
-            , 'lib/components-font-awesome/css/font-awesome.min.css'
-            , 'lib/bootstrap/dist/css/bootstrap.min.css'
-            , 'lib/animate.css/animate.min.css'
         ]
     };
 
@@ -33,38 +29,36 @@ module.exports = function(grunt) {
                 csslintrc: '.csslintrc'
             }
             , all: {
-                src: 'css/site.css'
+                src: config.cssFiles
             }
         }
         , uglify: {
             dist: {
                 options: {
                     sourceMap: false
-                    , banner: '/*! Resume Minified | Jonathan Trowbridge */'
+                    , preserveComments: false
                 }
                 , files: {
-                    'scripts/site.min.js': config.jsFiles
+                    'scripts/main.min.js': config.jsFiles
                 }
             }
         }
         , cssmin: {
             dist: {
                 options: {
-                    keepSpecialComments: '0'
-                    , rebase: true
-                    , banner: '/*! Resume Minified | Jonathan Trowbridge */'
-                    , root: ''
+                    rebase: true
+                    , keepSpecialComments: 0
                 }
                 , files: {
-                    'css/style.min.css': config.cssFiles
+                    'css/site.min.css': config.cssFiles
                 }
             }
         }
         , browserSync: {
             bsFiles: {
                 src: [
-                    'scripts/site.min.js'
-                    , 'css/style.min.css'
+                    'scripts/main.min.js'
+                    , 'css/site.min.css'
                 ]
             }
             , options: {
