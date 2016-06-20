@@ -13,15 +13,16 @@ body {
 }
 
 .container {
-/*    max-width: 960px;
+    /*    max-width: 960px;
     margin: 0 auto;*/
 }
 
 section.module:first-child .container {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 0;
     right: 0;
+    transform: translateY(-40%);
 }
 
 section.module:last-child {
