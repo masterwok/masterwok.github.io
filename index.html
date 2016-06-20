@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Resume</title>
+    <title>Jonathan Trowbridge</title>
     <link rel="stylesheet" href="css/site.css" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="lib/animate.css/animate.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link href="lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,10 +23,9 @@
 <body>
     <section class="module parallax parallax-1">
         <canvas id="gameOfLifeTarget"></canvas>
-        <div class="container">
+        <div class="parallax-container container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <!-- <h4>Hello, my name is</h4> -->
                     <h1>Hey, I'm Jonathan</h1>
                     <h4>I write code / hack the planet</h4>
                 </div>
@@ -32,27 +33,45 @@
         </div>
     </section>
     <section class="module content">
-        <div class="container">
+        <div id="contact-info" class="parallax-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 wow animated bounceInLeft">
+                        <i class="fa fa-envelope-o fa-3x"></i>
+                        <h5>Jonathan.Trowbridge@gmail.com</h5>
+                    </div>
+                    <div class="col-sm-4 wow animated bounceInUp">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <h5>(703) 408-0566</h5>
+                    </div>
+                    <div class="col-sm-4 wow animated bounceInRight">
+                        <i class="fa fa-map-marker fa-3x"></i>
+                        <h5>Herndon, Virginia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--     <section class="module parallax parallax-2">
+    </section> -->
+    <section class="module content">
+        <div class="parallax-container container">
             <h2>Lorem Ipsum Dolor</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </div>
     </section>
-    <section class="module parallax parallax-2">
-        <!-- <canvas id="gameOfLifeTarget"></canvas> -->
+      <section class="module parallax parallax-2">
     </section>
-    <section class="module content">
-        <div class="container">
+    <!--     <section id="message-info" class="module content">
+        <div class="parallax-container container">
             <h2>Lorem Ipsum Dolor</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
         </div>
     </section>
-    <section class="module content">
-        <div class="container">
-            <!-- <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p> -->
-        </div>
-    </section>
+    <footer>
+    </footer> -->
     <!-- <script src="http://192.168.1.10:8080/target/target-script-min.js#anonymous"></script> -->
+    <script type="text/javascript" src="lib/wow/dist/wow.min.js"></script>
     <script type="text/javascript" src="lib/gameoflifejs/dist/gameOfLife.min.js"></script>
     <script type="text/javascript">
     'use strict';
@@ -68,7 +87,9 @@
         }
     }
 
-    GameOfLife({
+    new WOW().init();
+
+    new GameOfLife({
         canvasId: 'gameOfLifeTarget',
         cellSize: 3,
         ratioAlive: 0.12,
