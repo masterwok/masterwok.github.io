@@ -1,0 +1,30 @@
+{
+  "name": "masterwok.github.io",
+  "version": "1.0.0",
+  "description": "Resume",
+  "main": "gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterwok/masterwok.github.io.git"
+  },
+  "keywords": [
+    "Resume"
+  ],
+  "author": "Jonathan Trowbridge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masterwok/masterwok.github.io/issues"
+  },
+  "homepage": "https://github.com/masterwok/masterwok.github.io#readme"
+}
