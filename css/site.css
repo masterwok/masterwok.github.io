@@ -102,12 +102,6 @@ footer .footer-contact ul i {
     margin-bottom: 0.6em;
 }
 
-section.about-me img {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
 section.about-me {
     padding-top: 40px;
 }
@@ -137,7 +131,9 @@ section.about-me .info p {
 
 section.about-me .info img {
     width: 100%;
-    height: 360px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 section.about-me .social {
@@ -159,23 +155,6 @@ section.about-me .social i:hover {
     cursor: pointer;
 }
 
-.thumbnailWrapper {
-    position: relative;
-    height: 360px;
-    overflow: hidden;
-}
-
-.thumbnailWrapper img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    width: auto;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
 .footer-contact form[name="contactForm"] button[type="submit"] {
     margin-right: 1em;
 }
@@ -183,4 +162,10 @@ section.about-me .social i:hover {
 .form-error-message,
 .form-success-message {
     display: none;
+}
+
+@media (max-width: 768px) {
+    section.about-me .info h3 {
+        margin-top: 22px;
+    }
 }
