@@ -85,12 +85,12 @@ footer {
 
 footer {
     min-height: 100vh;
-    padding: 70px 0;
+    padding-top: 70px;
     color: #fff;
 }
 
 footer .footer-header {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 footer .footer-contact {
