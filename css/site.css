@@ -75,9 +75,13 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-2 {
-    height: 300px;
     background-color: #ECF0F1;
     margin-top: 70px;
+    height: auto;
+    /*padding-top: 60px;*/
+    padding-bottom: 60px;
+    font: 300 15px/1.6 Raleway, serif, sans-serif;
+    color: #000;
 }
 
 section.module.parallax-3 {
@@ -88,6 +92,18 @@ section.module.parallax-3 {
     text-align: center;
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
     padding: 20px 0;
+}
+
+.contact-info p {
+    padding-top: 5px;
+}
+
+.contact-info a {
+    color: #787878;
+}
+
+.contact-info a:hover {
+    color: #16a085;
 }
 
 footer {
@@ -150,7 +166,7 @@ section.about-me .info img {
 }
 
 section.about-me .social {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 section.about-me .social i {
@@ -159,7 +175,7 @@ section.about-me .social i {
 }
 
 section.about-me .social i:hover {
-    color: #1abc9c;
+    color: #16a085;
     -webkit-animation: swing 1s;
     animation: swing 1s;
 }
@@ -177,12 +193,6 @@ section.about-me .social i:hover {
     display: none;
 }
 
-@media (max-width: 768px) {
-    section.about-me .info h3 {
-        margin-top: 22px;
-    }
-}
-
 section.resume {
     padding-bottom: 60px;
 }
@@ -195,6 +205,10 @@ section.resume .resume-entry .resume-entry-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #000;
+}
+
+section.resume .resume-entry .resume-entry-title a {
+    /*color: #000;*/
 }
 
 section.resume .resume-entry p {
@@ -213,4 +227,21 @@ section.resume .resume-entry-description ul li {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #16a085;
+}
+
+@media (max-width: 768px) {
+    section.about-me .info h3 {
+        margin-top: 22px;
+    }
+    .contact-info div[class^="col-"] {
+        padding-bottom: 20px;
+    }
 }
