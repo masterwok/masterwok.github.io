@@ -248,6 +248,9 @@ form[name="contactForm"] button {
     .contact-info div[class^="col-"] {
         padding-bottom: 20px;
     }
+    .contact-info div[class^="col-"]:last-child {
+        padding-bottom: 0;
+    }
     .resume-entry-location {
         position: relative;
     }
