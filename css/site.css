@@ -135,6 +135,7 @@ footer .footer-contact ul i {
 
 .section-header h5 {
     color: #000;
+    font-family: Montserrat, sans-serif;
 }
 
 .section-header p {
@@ -245,5 +246,28 @@ a:hover {
     }
     .contact-info div[class^="col-"] {
         padding-bottom: 20px;
+    }
+    .resume-entry-location {
+        position: relative;
+    }
+    .resume-entry-location i {
+        position: absolute;
+        top: 5px;
+    }
+    .resume-entry-location address {
+        margin-left: 1.5em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .resume-entry-location-list li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .resume-entry-location-list li:first-child {
+        padding-left: 0;
+        margin-left: -5px;
     }
 }
