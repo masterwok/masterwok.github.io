@@ -177,6 +177,7 @@ section.about-me .social i {
 
 section.about-me .social i:hover {
     color: #16a085;
+    -moz-animation: swing 1s;
     -webkit-animation: swing 1s;
     animation: swing 1s;
 }
@@ -210,10 +211,6 @@ section.resume .resume-entry .resume-entry-title {
     color: #000;
 }
 
-section.resume .resume-entry .resume-entry-title a {
-    /*color: #000;*/
-}
-
 section.resume .resume-entry p {
     font-family: Raleway, serif, sans-serif;
     font-size: 14px;
@@ -240,6 +237,10 @@ a:hover {
     color: #16a085;
 }
 
+form[name="contactForm"] button {
+    margin-right: 1em;
+}
+
 @media (max-width: 768px) {
     section.about-me .info h3 {
         margin-top: 22px;
@@ -255,7 +256,7 @@ a:hover {
         top: 5px;
     }
     .resume-entry-location address {
-        margin-left: 1.5em;
+        margin-left: 1.6em;
         margin-bottom: 10px;
     }
 }
