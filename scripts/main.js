@@ -77,24 +77,67 @@ resumeApp.message = {
         input.parentNode.classList.remove('has-error');
     }
     , send: function() {
+        // Form elements
         var form = document.getElementById('contactForm');
         var nameInput = form.querySelectorAll('input[name="name"]')[0];
         var emailInput = form.querySelectorAll('input[name="email"]')[0];
         var messageInput = form.querySelectorAll('textarea[name="message"]')[0];
 
+        // Form state messages
         var successMessage = form.querySelectorAll('.form-success-message')[0];
-        var errorMessage = form.querySelectorAll('.form-error-message')[0];
+        var responseErrorMessage = form.querySelectorAll('.form-response-error-message')[0];
+        var fieldErrorMessage = form.querySelectorAll('.form-field-error-message')[0];
+        var pendingMessage = form.querySelectorAll('.form-pending-message')[0];
 
-        if (this.isValid(nameInput, emailInput, messageInput)) {
-            errorMessage.style.display = 'none';
-            successMessage.style.display = 'inline-block';
-            console.log('sending messag...');
+        // Clear any previous messages
+        fieldErrorMessage.style.display =
+            responseErrorMessage.style.display =
+            fieldErrorMessage.style.display =
+            pendingMessage.style.display = 'none';
 
+        // Only send if form values are correct
+        if (!this.isValid(nameInput, emailInput, messageInput)) {
+            successMessage.style.display = 'none';
+            responseErrorMessage.style.display = 'none';
+            fieldErrorMessage.style.display = 'inline-block';
             return false;
         }
 
-        successMessage.style.display = 'none';
-        errorMessage.style.display = 'inline-block';
+        // Init request object and prepare data
+        var xhr = new XMLHttpRequest();
+        var data = JSON.stringify({
+            name: nameInput.value
+            , email: emailInput.value
+            , message: messageInput.value
+        });
+
+        // Handle response
+        xhr.onreadystatechange = function() {
+
+            // readyState === 4 means request is finished
+            if (xhr.readyState === 4) {
+                pendingMessage.style.display = 'none';
+                responseErrorMessage.style.display = 'none';
+
+                if (xhr.status === 200) {
+                    // Oh yeahhhhhhh (kool-aid man voice)
+                    fieldErrorMessage.style.display = 'none';
+                    successMessage.style.display = 'inline-block';
+                } else {
+                    // Oh noooooo
+                    responseErrorMessage.style.display = 'inline-block';
+                    successMessage.style.display = 'none';
+                }
+            }
+        };
+
+        // Make the request
+        xhr.open('POST', 'https://formspree.io/jonathan.trowbridge@gmail.com', true);
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.send(data);
+
+        // Show pending message (will be cleared in onreadystatechange() event above)            
+        pendingMessage.style.display = 'inline-block';
 
         return false;
     }

@@ -188,8 +188,10 @@ section.about-me .social i:hover {
     margin-right: 1em;
 }
 
-.form-error-message,
-.form-success-message {
+.form-field-error-message,
+.form-success-message,
+.form-pending-message,
+.form-response-error-message {
     display: none;
 }
 
