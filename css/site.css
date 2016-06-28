@@ -275,3 +275,7 @@ form[name="contactForm"] button {
         margin-left: -5px;
     }
 }
+
+.education-list {
+    padding-bottom: 2em;
+}
