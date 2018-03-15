@@ -18,12 +18,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="494">
+              <caret line="79" column="196" lean-forward="false" selection-start-line="79" selection-start-column="196" selection-end-line="79" selection-end-column="196" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#9814#9820#0" expanded="true" />
+                <element signature="e#9813#9819#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -256,15 +256,15 @@
       <option name="presentableId" value="Default" />
       <updated>1521071377002</updated>
       <workItem from="1521071378915" duration="850000" />
-      <workItem from="1521140793463" duration="3732000" />
+      <workItem from="1521140793463" duration="4962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4582000" />
+    <option name="totallyTimeSpent" value="5812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1052" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1052" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -333,12 +333,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="92" column="24" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="494">
+          <caret line="79" column="196" lean-forward="false" selection-start-line="79" selection-start-column="196" selection-end-line="79" selection-end-column="196" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9814#9820#0" expanded="true" />
+            <element signature="e#9813#9819#0" expanded="true" />
           </folding>
         </state>
       </provider>
