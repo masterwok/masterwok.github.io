@@ -15,8 +15,8 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 
 // Start the WOW animation instance
-resumeApp.wowInstance = new WOW();
-resumeApp.wowInstance.init();
+// resumeApp.wowInstance = new WOW();
+// resumeApp.wowInstance.init();
 
 // Start the game of life
 resumeApp.gameInstance = new GameOfLife({
