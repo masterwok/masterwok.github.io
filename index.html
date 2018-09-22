@@ -5,368 +5,520 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no"/>
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jonathan Trowbridge</title>
-    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.min.css"
+          type="text/css">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="lib/flat-ui/dist/css/flat-ui.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/site.min.css" type="text/css">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-    <section class="module parallax parallax-1">
-        <canvas id="gameOfLifeTarget"></canvas>
-        <div class="parallax-container container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1>Hi, I'm Jonathan</h1>
-                    <h4>I'm a software engineer</h4>
-                </div>
+<section class="module parallax parallax-1">
+    <canvas id="gameOfLifeTarget"></canvas>
+    <div class="parallax-container container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>Hi, I'm Jonathan</h1>
+                <h4>I'm a software engineer</h4>
             </div>
         </div>
-    </section>
-    <section class="module content">
-        <div class="parallax-container contact-info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 ">
-                        <i class="fa fa-envelope-o fa-3x"></i>
-                        <p><a href="mailto:jonathan.trowbridge@gmail.com">Jonathan.Trowbridge@gmail.com</a></p>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <i class="fa fa-phone fa-3x"></i>
-                        <p>(703) 408-0566</p>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <i class="fa fa-map-marker fa-3x"></i>
-                        <p>Richmond, Virginia</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="module content about-me">
-        <div class="parallax-container container">
-            <div class="row section-header wow animated fadeInDown">
-                <div class="col-sm-12">
-                    <h5>Jonathan Trowbridge</h5>
-                    <p>Full Stack Software Engineer</p>
-                </div>
-            </div>
-            <div class="row info">
-                <div class="col-sm-4 wow animated fadeInLeft ">
-                    <div class="thumbnailWrapper">
-                        <img src="img/me.jpg">
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="wow animated fadeInRight">
-                        <h3 class="uppercase">About</h3>
-                        <p>
-                            I'm a 28-year-old Software Engineer currently residing in Boulder, Colorado. I have 10 years of professional application development experience and a Bachelor of Science in Computer Science from Virginia Commonwealth University.
-                            <br>
-                            <br>Throughout my career, I've had the opportunity to work on a variety of projects utilizing various technologies.
-                            These technologies include, but are not limited to, front-end frameworks like AngularJS and React, back-end data solutions like Microsoft SQL Server and PostgreSQL, and cross-platform mobile application frameworks like Xamarin.
-                            I can implement complex cross-platform mobile applications, Web APIs, and front-end applications.
-                            <br>
-                            <br>I enjoy application development because I like building simple solutions for complex problems. I can appreciate how each project is unique and challenging in its own way, and how the experience gleamed from each one can be applied to create solutions in the future.
-                            <br>
-                            <br>Below, please find an outline of my academic and professional accomplishments as well as a <a href="#contactForm">contact</a> form if you would like to get in touch.
-                        </p>
-                    </div>
-                    <br/>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button class="btn btn-primary wow animated fadeInLeft" onclick="window.open('Jonathan_Trowbridge_CV.pdf', '_blank')">Download CV</button>
-                        </div>
-                    </div>
-                    <section class="social wow animated fadeInRight">
-                        <h3 class="uppercase">Social Profiles</h3>
-                        <a href="https://github.com/masterwok" target="_blank"><i class="fa fa-github fa-3x pointer" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/jonathan-trowbridge-35986848" target="_blank"><i class="fa fa-linkedin-square fa-3x pointer" aria-hidden="true"></i></a>
-                        <a href="http://stackoverflow.com/users/563509/jtsan" target="_blank"><i class="fa fa-stack-overflow fa-3x pointer" aria-hidden="true"></i></a>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="module parallax parallax-2">
-        <div class="parallax-container container">
-            <div class="row section-header wow animated fadeInDown">
-                <div class="col-lg-12">
-                    <h5>Competencies</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 wow animated fadeInRight">
-                    <h6><i class="fa fa-keyboard-o fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Languages</h6>
-                    <p>C#, Java, TypeScript, JavaScript, T-SQL, PL/SQL, Perl, HTML5/CSS3</p>
-                </div>
-                <div class="col-lg-4 col-md-4 wow animated fadeInLeft">
-                    <h6><i class="fa fa-wrench fa-2x" aria-hidden="true"></i>&nbsp;Frameworks/Libs</h6>
-                    <p>ASP.NET, Xamarin, AngularJS, React, Redux, Node.js, Mean.js, Express, Backbone, Marionette, Dojo, jQuery, Underscore, Knockout, Bootstrap, and Handlebars.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 wow animated fadeInUp">
-                    <h6><i class="fa fa-database fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Data Solutions</h6>
-                    <p>Microsoft SQL Server, MongoDB, and PostgreSQL</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="resume" class="module content">
-        <div class="parallax-container container">
-            <div class="row section-header wow animated fadeInDown">
-                <div class="col-lg-12">
-                    <h5>Resume</h5>
-                    <p>Professional and Academic Achivements</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
-                    <h6 class="uppercase">Education</h6>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="row resume-entry wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Bachelor of Science in Computer Science</p>
-                            <ul class="icon-list list-unstyled resume-entry-location-list education-list">
-                                <li class="resume-entry-location">
-                                    <i class="fa fa-fw fa-map-marker"></i>
-                                    <span class="hidden-xs">Virginia Commonwealth University | Richmond, Virginia</span>
-                                    <address class="visible-xs">
-                                        Virginia Commonwealth University
-                                        <br> Richmond, Virginia
-                                    </address>
-                                </li>
-                                <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2009 - 2013</li>
-                            </ul>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
-                    <h6 class="uppercase">Professional Work</h6>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="row resume-entry wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Software Engineer</p>
-                            <ul class="icon-list list-unstyled resume-entry-location-list">
-                                <li class="resume-entry-location">
-                                    <i class="fa fa-fw fa-map-marker"></i>
-                                    <span class="hidden-xs">Mapleton Hill Media | Boulder, Colorado</span>
-                                    <address class="visible-xs">
-                                        Mapleton Hill Media
-                                        <br> Boulder, Colorado
-                                    </address>
-                                </li>
-                                <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2016 - 2018</li>
-                            </ul>
-                            <div class="resume-entry-description">
-                                <ul>
-                                    <li>Developed complex iOS and Android mobile applications using Microsoft Xamarin framework.</li>
-                                    <li>Implemented multifaceted ASP.NET Web APIs to back mobile applications and synchronize data between devices.</li>
-                                    <li>Worked as part of a small, four-person team, to develop the Aspen Snowmass cross-platform mobile application.</li>
-                                    <li>Developed various types of applications, including, but not limited to: skiing, agriculture, inventory, and shipping.</li>
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Application Developer</p>
-                            <ul class="icon-list list-unstyled resume-entry-location-list">
-                                <li class="resume-entry-location">
-                                    <i class="fa fa-fw fa-map-marker"></i>
-                                    <span class="hidden-xs">Worldivew Solutions Inc. | Richmond, Virginia</span>
-                                    <address class="visible-xs">
-                                        Worldivew Solutions Inc.
-                                        <br> Richmond, Virginia
-                                    </address>
-                                </li>
-                                <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2013 - 2016</li>
-                            </ul>
-                            <div class="resume-entry-description">
-                                <ul>
-                                    <li>Migrated an existing .NET Web Forms application to a new Backbone/Marionette framework and ASP.NET Web API. The project was a watershed pollution management module for the Virginia Department of Environmental Quality’s Total Maximum Daily Load program</li>
-                                    <li>Worked as part of a team to develop a resource conservation management planning module for the Virginia Department of Conservation and Recreation’s Best Management Practice tracking program</li>
-                                    <li>Implemented a large portion of the complex claims-based permitting workflow utilized by the Virginia Department of Environmental Quality’s Storm Water Construction General Permitting process</li>
-                                    <li>Implemented claims-based authentication, a user management system, and account email workflow to an existing Air Force recruiting application using the ASP.NET Identity provider</li>
-                                    <li>Worked as part of a team to develop a land and water resource planning software called PracticeKeeper</li>
-                                    <li>Migrated a non-profit website used to promote exercise in K-12 students from jQuery to Dojo</li>
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Software Developer</p>
-                            <ul class="icon-list list-unstyled resume-entry-location-list">
-                                <li class="resume-entry-location">
-                                    <i class="fa fa-fw fa-map-marker"></i>
-                                    <span class="hidden-xs">Gallium Technology | Richmond, Virginia</span>
-                                    <address class="visible-xs">
-                                        Gallium Technology
-                                        <br> Richmond, Virginia
-                                    </address>
-                                </li>
-                                <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2012 - 2013</li>
-                            </ul>
-                            <div class="resume-entry-description">
-                                <ul>
-                                    <li>Developed, documented, and deployed features into an existing MVC web application</li>
-                                    <li>Maintained and administered a PostgreSQL database</li>
-                                    <li>Updated legacy components for compliance with current web standards</li>
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Quality Assurance Intern</p>
-                            <ul class="icon-list list-unstyled resume-entry-location-list">
-                                <li class="resume-entry-location">
-                                    <i class="fa fa-fw fa-map-marker"></i>
-                                    <span class="hidden-xs">Prematics, Inc | Richmond, Virginia</span>
-                                    <address class="visible-xs">
-                                        Prematics Inc.
-                                        <br>Vienna, Virginia
-                                    </address>
-                                </li>
-                                <li><i class="fa fa-fw fa-calendar"></i>&nbsp;July 2008 - December 2008</li>
-                            </ul>
-                            <div class="resume-entry-description">
-                                <ul>
-                                    <li>Developed unit tests using Perl and the Selenium browser automation framework</li>
-                                    <li>Managed, updated, and added customized Python plugins for Trac bug tracking system</li>
-                                </ul>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
-                    <h6 class="uppercase">Certifications</h6>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="row resume-entry wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title">Microsoft Xamarin Certified Developer</p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
-                    <h6 class="uppercase">Side Projects</h6>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title"><a href="https://play.google.com/store/apps/details?id=com.masterwok.bitcast" target="_blank">Bit Cast</a></p>
-                            <p class="resume-entry-description">
-                                At its core, Bit Cast is an Android application that allows users to stream and play torrent video media before it finishes downloading. The media can be casted directly to Chromecast devices, or played locally on the user's phone. Bit Cast also supports sharing video streams over HTTP with devices on the same network.
-                            </p>
-                            <ul>
-                                <li>Leverages Google’s new Android Architecture Components (Room, ViewModel, and LiveData).</li>
-                                <li>Powered by the VLC libVLC library for converting and playing media.</li>
-                                <li>Uses Dagger 2 as an IoC container for injecting dependencies.</li>
-                                <li>Implements analytics and crash reporting.</li>
-                                <li>Runs an HTTP server that allows users to share a URL that allows devices on the same network to stream media from the device.</li>
-                            </ul>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title"><a href="https://github.com/masterwok/moms-recipes" target="_blank">AngularJS Recipe Manager</a></p>
-                            <p class="resume-entry-description">
-                                A simple, stylized recipe manager written in TypeScript using AngularJS and leveraging Google Firebase as a store.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title"><a href="https://github.com/masterwok/GameOfLife" target="_blank">Game of Life Screensaver</a></p>
-                            <p class="resume-entry-description">
-                                A screensaver written in C# that implements the optimized algorithm discussed in <a href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746" target="_blank">Michael Abrash's Graphics Programming Black Book</a>. The screensaver is fully configurable from the cell size to the starting seed generation density.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row resume-entry  wow animated fadeInRight">
-                        <div class="col-lg-12">
-                            <p class="resume-entry-title"><a href="https://github.com/masterwok/GameOfLifeJS" target="_blank">Game of Life JS</a></p>
-                            <p class="resume-entry-description">
-                                A port of the windows screensaver written in vanilla JavaScript. It is just as configurable as the original screensaver and utilizes a canvas target to draw generations. This project is shown at the top of this page.
-                            </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
+    </div>
+</section>
+<section class="module content">
+    <div class="parallax-container contact-info">
         <div class="container">
-            <div class="row footer-header">
-                <div class="col-sm-12">
-                    <h5>Contact</h5>
-                    <p>Feel free to send me a message</p>
-                </div>
-            </div>
-            <div class="row footer-contact">
-                <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <i class="fa fa-envelope-o fa-3x"></i>
                     <p>
-                        I am currently looking for a new full-time employment opportunity and readily available to relocate.
+                        <a href="mailto:jonathan.trowbridge@gmail.com">Jonathan.Trowbridge@gmail.com</a>
                     </p>
-                    <ul class="icon-list list-unstyled">
-                        <li><i class="fa fa-fw fa-phone"></i>(703) 408 - 0566</li>
-                        <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:jonathan.trowbridge@gmail.com">Jonathan.Trowbridge@gmail.com</a></li>
-                    </ul>
                 </div>
-                <div class="col-sm-6">
-                    <form id="contactForm" name="contactForm" novalidate>
-                        <div class="form-group">
-                            <input name="name" type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input name="email" type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" class="form-control" rows="6" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" onclick="resumeApp.message.send()" class="btn btn-primary">Send</button>
-                            <span class="form-field-error-message"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Check above fields</span>
-                            <span class="form-response-error-message"><i class="fa fa-frown-o"></i>&nbsp;&nbsp;Uh oh, something is broken</span>
-                            <span class="form-success-message">Sent it!</span>
-                            <span class="form-pending-message"><i class="fa fa-circle-o-notch fa-spin fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Sending...</span>
-                        </div>
-                    </form>
+                <div class="col-sm-4 ">
+                    <i class="fa fa-phone fa-3x"></i>
+                    <p>(703) 408-0566</p>
+                </div>
+                <div class="col-sm-4 ">
+                    <i class="fa fa-map-marker fa-3x"></i>
+                    <p>Richmond, Virginia</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <script type="text/javascript" src="lib/wow/dist/wow.min.js"></script>
-    <script type="text/javascript" src="lib/gameoflifejs/dist/gameOfLife.min.js"></script>
-    <!-- Main script must be loaded after all other dependencies -->
-    <script type="text/javascript" src="scripts/main.min.js"></script>
+    </div>
+</section>
+<section class="module content about-me">
+    <div class="parallax-container container">
+        <div class="row section-header wow animated fadeInDown">
+            <div class="col-sm-12">
+                <h5>Jonathan Trowbridge</h5>
+                <p>Full Stack Software Engineer</p>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="col-sm-4 wow animated fadeInLeft ">
+                <div class="thumbnailWrapper">
+                    <img src="img/self.png">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="wow animated fadeInRight">
+                    <h3 class="uppercase">About</h3>
+                    <p>
+                        My name is Jonathan Trowbridge and I'm a professional Software Engineer
+                        currently residing in Richmond, Virginia. I have over 10 years of
+                        professional work experience developing software and received a Bachelor of
+                        Science in Computer Science from Virginia Commonwealth University.
+                        <br>
+                        <br>
+                        Throughout my career, I've been fortunate enough to work with a variety of
+                        projects utilizing various technologies. These technologies include, but are
+                        not limited to, front-end frameworks like AngularJS and React, back-end data
+                        solutions like Microsoft SQL Server and PostgreSQL, and cross-platform
+                        mobile application frameworks like Xamarin. I can implement complex
+                        cross-platform mobile applications, Web APIs, and front-end applications.
+                        <br>
+                        <br>I enjoy application development because I like building simple solutions
+                        for complex problems. I can appreciate how each project is unique and
+                        challenging in its own way, and how the experience gleamed from each one can
+                        be applied to create solutions in the future.
+                        <br>
+                        <br>Below, please find an outline of my academic and professional
+                        accomplishments as well as a <a href="#contactForm">contact</a> form.
+                    </p>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary wow animated fadeInLeft"
+                                onclick="window.open('Jonathan_Trowbridge_CV.pdf', '_blank')">
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+                <section class="social wow animated fadeInRight">
+                    <h3 class="uppercase">Social Profiles</h3>
+                    <a href="https://github.com/masterwok" target="_blank"><i
+                            class="fa fa-github fa-3x pointer" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathan-trowbridge-35986848"
+                       target="_blank"><i class="fa fa-linkedin-square fa-3x pointer"
+                                          aria-hidden="true"></i></a>
+                    <a href="http://stackoverflow.com/users/563509/jtsan" target="_blank"><i
+                            class="fa fa-stack-overflow fa-3x pointer" aria-hidden="true"></i></a>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="resume module content">
+    <div class="parallax-container container">
+        <div class="row section-header wow animated fadeInDown">
+            <div class="col-lg-12">
+                <h5>Resume</h5>
+                <p>Professional and Academic Achievements</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
+                <h6 class="uppercase">Education</h6>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row resume-entry wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">Bachelor of Science in Computer Science</p>
+                        <ul class="icon-list list-unstyled resume-entry-location-list education-list">
+                            <li class="resume-entry-location">
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                <span class="hidden-xs">Virginia Commonwealth University | Richmond, Virginia</span>
+                                <address class="visible-xs">
+                                    Virginia Commonwealth University
+                                    <br> Richmond, Virginia
+                                </address>
+                            </li>
+                            <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2009 - 2013</li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
+                <h6 class="uppercase">Professional Work</h6>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row resume-entry wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">Software Engineer</p>
+                        <ul class="icon-list list-unstyled resume-entry-location-list">
+                            <li class="resume-entry-location">
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                <span class="hidden-xs">Mapleton Hill Media | Boulder, Colorado</span>
+                                <address class="visible-xs">
+                                    Mapleton Hill Media
+                                    <br> Boulder, Colorado
+                                </address>
+                            </li>
+                            <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2016 - 2018</li>
+                        </ul>
+                        <div class="resume-entry-description">
+                            <ul>
+                                <li>Developed complex iOS and Android mobile applications using
+                                    Microsoft Xamarin framework.
+                                </li>
+                                <li>Implemented multifaceted ASP.NET Web APIs to back mobile
+                                    applications and synchronize data between devices.
+                                </li>
+                                <li>Worked as part of a small, four-person team, to develop the
+                                    Aspen Snowmass cross-platform mobile application.
+                                </li>
+                                <li>Developed various types of applications, including, but not
+                                    limited to: skiing, agriculture, inventory, and shipping.
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">Application Developer</p>
+                        <ul class="icon-list list-unstyled resume-entry-location-list">
+                            <li class="resume-entry-location">
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                <span class="hidden-xs">Worldivew Solutions Inc. | Richmond, Virginia</span>
+                                <address class="visible-xs">
+                                    Worldivew Solutions Inc.
+                                    <br> Richmond, Virginia
+                                </address>
+                            </li>
+                            <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2013 - 2016</li>
+                        </ul>
+                        <div class="resume-entry-description">
+                            <ul>
+                                <li>
+                                    Created a Watershed Pollution Management module for the Virginia
+                                    Department of Environmental Quality using Backbone, Marionette,
+                                    and ASP.NET Web API.
+                                </li>
+                                <li>
+                                    Developed a resource conservation management planning module for
+                                    the Best Management Practice Tracking application utilized by
+                                    the Virginia Department of Conservation and Recreation
+                                </li>
+                                <li>
+                                    Implemented a complex claims-based authentication workflow that
+                                    is utilized within the Storm Water Construction General
+                                    Permitting application for the Virginia Department of
+                                    Environmental
+                                    Quality
+                                </li>
+
+                                <li>Created a claims-based user management web portal for a
+                                    recruiting application utilized by the Air Force.
+                                </li>
+                                <li>Worked as part of a team to develop a land and water resource
+                                    planning software called PracticeKeeper
+                                </li>
+                                <li>Migrated a non-profit website used to promote exercise in K-12
+                                    students from jQuery to Dojo
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">Software Developer</p>
+                        <ul class="icon-list list-unstyled resume-entry-location-list">
+                            <li class="resume-entry-location">
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                <span class="hidden-xs">Gallium Technology | Richmond, Virginia</span>
+                                <address class="visible-xs">
+                                    Gallium Technology
+                                    <br> Richmond, Virginia
+                                </address>
+                            </li>
+                            <li><i class="fa fa-fw fa-calendar"></i>&nbsp;2012 - 2013</li>
+                        </ul>
+                        <div class="resume-entry-description">
+                            <ul>
+                                <li>Developed, documented, and deployed features into an existing
+                                    MVC web application
+                                </li>
+                                <li>Maintained and administered a PostgreSQL database</li>
+                                <li>Updated legacy components for compliance with current web
+                                    standards
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">Quality Assurance Intern</p>
+                        <ul class="icon-list list-unstyled resume-entry-location-list">
+                            <li class="resume-entry-location">
+                                <i class="fa fa-fw fa-map-marker"></i>
+                                <span class="hidden-xs">Prematics, Inc | Richmond, Virginia</span>
+                                <address class="visible-xs">
+                                    Prematics Inc.
+                                    <br>Vienna, Virginia
+                                </address>
+                            </li>
+                            <li><i class="fa fa-fw fa-calendar"></i>&nbsp;July 2008 - December 2008
+                            </li>
+                        </ul>
+                        <div class="resume-entry-description">
+                            <ul>
+                                <li>Developed unit tests using Perl and the Selenium browser
+                                    automation framework
+                                </li>
+                                <li>Managed, updated, and added customized Python plugins for Trac
+                                    bug tracking system
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
+                <h6 class="uppercase">Certifications</h6>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row resume-entry wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">
+                            <a href="https://university.xamarin.com/content/certification">Microsoft
+                                Xamarin Certified Developer
+                            </a>
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow animated fadeInLeft">
+                <h6 class="uppercase">Side Projects</h6>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title"><a
+                                href="https://play.google.com/store/apps/details?id=com.masterwok.bitcast"
+                                target="_blank">Bit Cast</a></p>
+                        <p class="resume-entry-description">
+                            Bit Cast is a free torrent download client and video player that aims to
+                            provide a simple interface for finding, downloading, and playing torrent
+                            videos locally or on Chromecast devices.
+                        </p>
+                        <ul>
+                            <li>Follows recommended Android architecture by utilizing <a
+                                    href="https://developer.android.com/jetpack/">Android Jetpack
+                                Architecture Components</a></li>
+                            <li>Media playback powered by a custom wrapper of the <a
+                                    href="https://wiki.videolan.org/LibVLC/">VLC libVLC library</a>
+                            </li>
+                            <li>Implements anonymous crash reporting and analytics</li>
+                            <li>Uses Kotlin coroutines for asynchronous operations</li>
+                            <li>Query for torrents within the app</li>
+                            <li>Play media locally or cast it to Chromecast devices</li>
+                            <li>Begin video playback before media finishes downloading</li>
+                            <li>Support for all magnet links and .torrent files</li>
+                            <li>Query for and apply subtitles of multiple languages in the local
+                                media player
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">
+                            <a href="https://github.com/masterwok/simple-vlc-player"
+                               target="_blank">
+                                Simple VLC Player
+                            </a>
+                        </p>
+                        <p class="resume-entry-description">
+                            An Android media player library powered by <a
+                                href="https://wiki.videolan.org/LibVLC/">libVLC</a> and <a
+                                href="http://trac.opensubtitles.org/projects/opensubtitles/wiki/DevReadFirst">Open
+                            Subtitles</a>.
+                        </p>
+                        <ul>
+                            <li>Significantly expands the types of media that can be played on
+                                Chromecast devices
+                            </li>
+                            <li>Provides custom local media player and Chromecast controller</li>
+                            <li>Queries and downloads subtitles using the free Open Subtitles API
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">
+                            <a href="https://github.com/masterwok/ffmpeg-glide-video-decoder"
+                               target="_blank">
+                                FFmpeg Glide Video Decoder
+                            </a>
+                        </p>
+                        <p class="resume-entry-description">
+                            A <a href="https://github.com/bumptech/glide">Glide</a> resource decoder
+                            powered by <a
+                                href="https://github.com/wseemann/FFmpegMediaMetadataRetriever">FFmpegMediaMetadataRetriever</a>.
+                            It expands
+                            support for extracting thumbnails from different types of video media.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">
+                            <a href="https://github.com/masterwok/tpb-search-android"
+                               target="_blank">
+                                The Pirate Bay Search Android
+                            </a>
+                        </p>
+                        <p class="resume-entry-description">
+                            An Android library for querying <a href="https://thepiratebay.org">thepiratebay.org</a>
+                            and its various proxies. The library utilizes
+                            Kotlin coroutines to parallelize web requests to ensure fast, accurate
+                            results.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title">
+                            <a href="https://github.com/masterwok/open-subtitles-android"
+                               target="_blank">
+                                Open Subtitles Android
+                            </a>
+                        </p>
+                        <p class="resume-entry-description">
+                            An Android library for querying and downloading subtitles from the <a
+                                href="http://trac.opensubtitles.org/projects/opensubtitles/wiki/DevReadFirst">Open
+                            Subtitles</a> REST API.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title"><a
+                                href="https://github.com/masterwok/moms-recipes" target="_blank">AngularJS
+                            Recipe Manager</a></p>
+                        <p class="resume-entry-description">
+                            A simple, stylized recipe manager written in TypeScript using AngularJS
+                            and leveraging Google Firebase as a store.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title"><a
+                                href="https://github.com/masterwok/GameOfLife" target="_blank">Game
+                            of Life Screensaver</a></p>
+                        <p class="resume-entry-description">
+                            A screensaver written in C# that implements the optimized algorithm
+                            discussed in <a
+                                href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746"
+                                target="_blank">Michael Abrash's Graphics Programming Black Book</a>.
+                            The screensaver is fully configurable from the cell size to the starting
+                            seed generation density.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row resume-entry  wow animated fadeInRight">
+                    <div class="col-lg-12">
+                        <p class="resume-entry-title"><a
+                                href="https://github.com/masterwok/GameOfLifeJS" target="_blank">Game
+                            of Life JS</a></p>
+                        <p class="resume-entry-description">
+                            A port of the windows screensaver written in vanilla JavaScript. It is
+                            just as configurable as the original screensaver and utilizes a canvas
+                            target to draw generations. This project is shown at the top of this
+                            page.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row footer-header">
+            <div class="col-sm-12">
+                <h5>Contact</h5>
+                <p>Feel free to send me a message</p>
+            </div>
+        </div>
+        <div class="row footer-contact">
+            <div class="col-sm-6">
+                <p>
+                    I am currently looking for a full-time employment opportunity.
+                </p>
+                <ul class="icon-list list-unstyled">
+                    <li><i class="fa fa-fw fa-phone"></i>(703) 408 - 0566</li>
+                    <li><i class="fa fa-fw fa-envelope-o"></i><a
+                            href="mailto:jonathan.trowbridge@gmail.com">Jonathan.Trowbridge@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <form id="contactForm" name="contactForm" novalidate>
+                    <div class="form-group">
+                        <input name="name" type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input name="email" type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" rows="6"
+                                  placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="resumeApp.message.send()"
+                                class="btn btn-primary">Send
+                        </button>
+                        <span class="form-field-error-message"><i
+                                class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Check above fields</span>
+                        <span class="form-response-error-message"><i class="fa fa-frown-o"></i>&nbsp;&nbsp;Uh oh, something is broken</span>
+                        <span class="form-success-message">Sent it!</span>
+                        <span class="form-pending-message"><i
+                                class="fa fa-circle-o-notch fa-spin fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Sending...</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="lib/wow/dist/wow.min.js"></script>
+<script type="text/javascript" src="lib/gameoflifejs/dist/gameOfLife.min.js"></script>
+<!-- Main script must be loaded after all other dependencies -->
+<script type="text/javascript" src="scripts/main.min.js"></script>
 </body>
 
 </html>
