@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="431d2c4f-dadd-4d90-85d0-73d5ff0d9bd2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jonathan_Trowbridge_CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Jonathan_Trowbridge_CV.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,13 +17,13 @@
     <session id="2010100078">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="477" column="99" selection-start-line="477" selection-start-column="99" selection-end-line="477" selection-end-column="99" />
+            <state relative-caret-position="208">
+              <caret line="458" column="31" selection-start-line="458" selection-start-column="31" selection-end-line="458" selection-end-column="31" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -135,10 +133,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2486" />
-    <option name="y" value="233" />
-    <option name="width" value="1276" />
-    <option name="height" value="707" />
+    <option name="x" value="466" />
+    <option name="y" value="113" />
+    <option name="width" value="1280" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -213,12 +211,13 @@
       <workItem from="1537743637772" duration="165000" />
       <workItem from="1539981554370" duration="510000" />
       <workItem from="1540231406720" duration="2555000" />
-      <workItem from="1540315993005" duration="237000" />
+      <workItem from="1540315993005" duration="874000" />
+      <workItem from="1541348586152" duration="255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23886000" />
+    <option name="totallyTimeSpent" value="25015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -230,9 +229,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="-9" width="2566" height="1452" extended-state="6" />
+    <frame x="-3" y="-9" width="1926" height="1058" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12252964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16402116" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Grunt " order="3" side_tool="true" />
@@ -245,7 +244,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299532" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20202808" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29166666" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -279,8 +278,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="477" column="99" selection-start-line="477" selection-start-column="99" selection-end-line="477" selection-end-column="99" />
+        <state relative-caret-position="208">
+          <caret line="458" column="31" selection-start-line="458" selection-start-column="31" selection-end-line="458" selection-end-column="31" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
           </folding>
