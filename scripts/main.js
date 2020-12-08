@@ -3,21 +3,6 @@
 
 var resumeApp = resumeApp || {};
 
-// // Fix orientation scaling bug (http://stackoverflow.com/questions/2557801)
-// if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-//     var viewportmeta = document.querySelector('meta[name="viewport"]');
-//     if (viewportmeta) {
-//         viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
-//         document.body.addEventListener('gesturestart', function() {
-//             viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-//         }, false);
-//     }
-// }
-
-// Start the WOW animation instance
-// resumeApp.wowInstance = new WOW();
-// resumeApp.wowInstance.init();
-
 // Start the game of life
 resumeApp.gameInstance = new GameOfLife({
     canvasId: 'gameOfLifeTarget'
