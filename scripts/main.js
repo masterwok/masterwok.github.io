@@ -6,18 +6,19 @@ var resumeApp = resumeApp || {};
 // Start the game of life
 resumeApp.gameInstance = new GameOfLife({
     canvasId: 'gameOfLifeTarget'
-    , cellSize: 3
+    , cellSize: 2
     , ratioAlive: 0.12
     , maxCircleRadius: 50
     , circleDropThreshold: 0.5
     , cycleColors: false
-    , color: '#d3d3d3'
+    //, color: '#d3d3d3'
+    , color: '#000'
     , keepAlive: true
 });
 resumeApp.gameInstance.run();
 
 resumeApp.message = {
-    isValid: function(nameInput, emailInput, messageInput) {
+    isValid: function (nameInput, emailInput, messageInput) {
         var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var isValid = true;
 
@@ -47,21 +48,21 @@ resumeApp.message = {
 
         return isValid;
     }
-    , addErrorToInput: function(input) {
+    , addErrorToInput: function (input) {
         if (!input.parentNode.classList.contains('form-group')) {
             throw 'Input must be within a form-group';
         }
 
         input.parentNode.classList.add('has-error');
     }
-    , removeErrorFromInput: function(input) {
+    , removeErrorFromInput: function (input) {
         if (!input.parentNode.classList.contains('form-group')) {
             throw 'Input must be within a form-group';
         }
 
         input.parentNode.classList.remove('has-error');
     }
-    , send: function() {
+    , send: function () {
         // Form elements
         var form = document.getElementById('contactForm');
         var nameInput = form.querySelectorAll('input[name="name"]')[0];
@@ -97,7 +98,7 @@ resumeApp.message = {
         });
 
         // Handle response
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
 
             // readyState === 4 means request is finished
             if (xhr.readyState === 4) {
