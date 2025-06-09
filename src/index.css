@@ -1,5 +1,6 @@
 body {
   font-family: 'Fira Code', monospace;
+  font-size: .9rem;
 }
 
 .container {
@@ -15,8 +16,8 @@ body {
 }
 
 .social-icon-tryhackme {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .social-icon-tryhackme:hover {
@@ -33,14 +34,14 @@ a {
   text-decoration: none;
 }
 
-h5 {
-  font-weight: bold;
-}
-
 dl {
   display: grid;
   grid-template-columns: 1fr auto;
   row-gap: 0.5em;
+}
+
+.certs {
+  margin-top: 2rem;
 }
 
 dt {
