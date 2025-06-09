@@ -1,32 +1,26 @@
 {
-  "name": "masterwok.github.io",
+  "name": "webpack-setup-files",
   "version": "1.0.0",
-  "description": "Resume",
-  "main": "gruntfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "^1.1.0",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-csslint": "^2.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-uglify": "^1.0.1",
-    "grunt-contrib-watch": "^1.1.0"
-  },
+  "description": "",
+  "main": "postcss.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config webpack.config.cjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/masterwok/masterwok.github.io.git"
-  },
-  "keywords": [
-    "Resume"
-  ],
-  "author": "Jonathan Trowbridge",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/masterwok/masterwok.github.io/issues"
-  },
-  "homepage": "https://github.com/masterwok/masterwok.github.io#readme"
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.5.4",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.8",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
 }
