@@ -34,6 +34,14 @@ a {
   text-decoration: none;
 }
 
+.email {
+  color:black;
+}
+
+.email:hover {
+  color: #16a085;
+}
+
 .certs {
   margin-top: 2rem;
 }
