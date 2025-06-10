@@ -92,3 +92,41 @@ a {
     margin-bottom: 0.25rem;
   }
 }
+
+.skills-container {
+  line-height: 1rem;
+  max-width: 900px;
+}
+
+.skills-container p {
+  margin-bottom: 0.5rem;
+}
+
+.skills-container strong {
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  max-width: 1000px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr; /* adjust label width as needed */
+  column-gap: 1.5rem;
+  align-items: start; /* ensures top alignment for multi-line values */
+}
+
+.label {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.value {
+  line-height: 1.5;
+}
