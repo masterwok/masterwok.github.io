@@ -56,8 +56,12 @@ a {
   display: inline;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .title,
-.company {
+.description {
   white-space: nowrap;
 }
 
@@ -81,7 +85,7 @@ a {
   }
 
   .title,
-  .company,
+  .description,
   .date {
     display: block;
     white-space: normal;
