@@ -70,8 +70,7 @@ a {
   white-space: nowrap;
 }
 
-/* Mobile: Stack layout and hide pipe */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .experience-entry {
     display: block;
   }
