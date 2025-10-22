@@ -43,11 +43,8 @@ body {
   object-fit: contain;
 }
 
-svg circle, svg.svg-thm path {
-  fill: #000;
-}
-
-svg circle:hover {
+.svg-htb:hover .htb-circle,
+a:hover .svg-htb .htb-circle {
   fill: #16a085;
 }
 
