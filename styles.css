@@ -4,38 +4,64 @@ body {
 }
 
 .container {
-  max-width: 960px;     /* or use 1140px for wider designs */
-  margin: 0 auto;        /* center horizontally */
-  padding: 1rem;         /* internal spacing (top/right/bottom/left) */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
-.social-icon {
-  margin-right: 10px;
-  color: black;
+.social-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.social-icon-tryhackme {
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
-.social-icon-tryhackme:hover {
-  filter: brightness(0) saturate(100%) invert(35%) sepia(67%) saturate(452%) hue-rotate(130deg) brightness(91%) contrast(89%);
-}
-
-.social-icon.social-icon:hover {
-  color: #16a085;
-}
-
-a {
-  color: #16a085;
+.social-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: #000000;
   background-color: transparent;
   text-decoration: none;
 }
 
+.social-container i {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.social-container a:hover {
+  color: #16a085;
+}
+
+.social-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+svg circle, svg.svg-thm path {
+  fill: #000;
+}
+
+svg circle:hover {
+  fill: #16a085;
+}
+
+.svg-thm path {
+  fill: #000;
+  transition: fill 0.2s ease;
+}
+
+.svg-thm:hover path {
+  fill: #16a085;
+}
+
 .email {
-  color:black;
+  color: black;
 }
 
 .email:hover {
@@ -125,9 +151,11 @@ a {
 
 .row {
   display: grid;
-  grid-template-columns: 180px 1fr; /* adjust label width as needed */
+  grid-template-columns: 180px 1fr;
+  /* adjust label width as needed */
   column-gap: 1.5rem;
-  align-items: start; /* ensures top alignment for multi-line values */
+  align-items: start;
+  /* ensures top alignment for multi-line values */
 }
 
 .label {
