@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .social-container {
   display: flex;
   align-items: center;
@@ -22,18 +23,33 @@ body {
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  color: #000000;
-  background-color: transparent;
   text-decoration: none;
+  /* Normal State: Purple */
+  color: #4b0082; 
+  transition: color 0.2s ease;
 }
 
+/* Normal State for SVGs */
+.svg-htb .htb-circle,
+.svg-thm {
+  fill: #4b0082;
+  transition: fill 0.2s ease;
+}
+
+/* Hover State: All turn Black */
+.social-container a:hover {
+  color: #000;
+}
+
+.social-container a:hover .htb-circle,
+.social-container a:hover .svg-thm {
+  fill: #000;
+}
+
+/* Keep icon size consistent */
 .social-container i {
   font-size: 2rem;
   line-height: 1;
-}
-
-.social-container a:hover {
-  color: #000;
 }
 
 .social-container img {
@@ -41,18 +57,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.svg-htb .htb-circle,
-.svg-thm,
-a:hover .svg-htb .htb-circle {
-  fill: #4b0082;
-}
-
-.svg-htb:hover .htb-circle:hover,
-.svg-thm:hover,
-a:hover .svg-htb:hover .htb-circle:hover {
-  fill: #000;
 }
 
 .email {
