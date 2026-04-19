@@ -33,7 +33,7 @@ body {
 }
 
 .social-container a:hover {
-  color: #16a085;
+  color: #000;
 }
 
 .social-container img {
@@ -43,18 +43,16 @@ body {
   object-fit: contain;
 }
 
-.svg-htb:hover .htb-circle,
+.svg-htb .htb-circle,
+.svg-thm,
 a:hover .svg-htb .htb-circle {
-  fill: #16a085;
+  fill: #4b0082;
 }
 
-.svg-thm path {
+.svg-htb:hover .htb-circle:hover,
+.svg-thm:hover,
+a:hover .svg-htb:hover .htb-circle:hover {
   fill: #000;
-  transition: fill 0.2s ease;
-}
-
-.svg-thm:hover path {
-  fill: #16a085;
 }
 
 .email {
@@ -62,11 +60,45 @@ a:hover .svg-htb .htb-circle {
 }
 
 .email:hover {
-  color: #16a085;
+  color: #4b0082;
+  text-decoration: none;
 }
 
 .certs {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold; 
+  color: #4b0082; 
+}
+
+a:visited {
+  color: #4b0082;
+}
+
+a:hover {
+  text-decoration: none; 
+  color: #000; 
+}
+
+a:active {
+  color: #310055; 
+}
+
+.cert-entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cert-header {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .experience-entry {
@@ -102,6 +134,27 @@ a:hover .svg-htb .htb-circle {
 }
 
 @media (max-width: 800px) {
+  .cert-entry {
+    display: block;
+  }
+
+  .cert-pipe {
+    display: none;
+  }
+
+  .cert-institution {
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  .cert-date {
+    display: block;
+    text-align: left;
+    white-space: normal;
+    margin-top: 0.25rem;
+  }
+
+
   .experience-entry {
     display: block;
   }
