@@ -10,7 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .social-container {
   display: flex;
   align-items: center;
@@ -24,29 +23,25 @@ body {
   width: 2rem;
   height: 2rem;
   text-decoration: none;
-  /* Normal State: Purple */
   color: #4b0082; 
   transition: color 0.2s ease;
 }
 
-/* Normal State for SVGs */
 .svg-htb .htb-circle,
-.svg-thm {
+.svg-thm path {
   fill: #4b0082;
   transition: fill 0.2s ease;
 }
 
-/* Hover State: All turn Black */
 .social-container a:hover {
   color: #000;
 }
 
 .social-container a:hover .htb-circle,
-.social-container a:hover .svg-thm {
+.social-container a:hover .svg-thm path {
   fill: #000;
 }
 
-/* Keep icon size consistent */
 .social-container i {
   font-size: 2rem;
   line-height: 1;
