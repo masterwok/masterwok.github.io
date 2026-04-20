@@ -16,6 +16,14 @@ body {
   gap: 10px;
 }
 
+.svg-thm path {
+  fill: #4b0082;
+}
+
+.social-container a:hover .svg-thm path {
+  fill: #000;
+}
+
 .social-container a {
   display: inline-flex;
   align-items: center;
