@@ -35,7 +35,7 @@ body {
   width: 2rem;
   height: 2rem;
   text-decoration: none;
-  color: #4b0082; 
+  color: #4b0082;
   transition: color 0.2s ease;
 }
 
@@ -81,8 +81,8 @@ body {
 
 a {
   text-decoration: none;
-  font-weight: bold; 
-  color: #4b0082; 
+  font-weight: bold;
+  color: #4b0082;
 }
 
 a:visited {
@@ -90,12 +90,12 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none; 
-  color: #000; 
+  text-decoration: none;
+  color: #000;
 }
 
 a:active {
-  color: #310055; 
+  color: #310055;
 }
 
 .cert-entry {
@@ -226,4 +226,14 @@ a:active {
 
 .value {
   line-height: 1.5;
+}
+
+ul.flat {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.flat li {
+  margin-bottom: 1em;
 }
