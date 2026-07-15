@@ -25,9 +25,9 @@
 </head>
 <body class="container">
   <nav class="site-nav">
-    <a href="/">Resume</a>
+    <a href="/" class="{% if page.url == '/' %}active{% endif %}">Resume</a>
     <span class="nav-sep">|</span>
-    <a href="/blog/">Write-Ups</a>
+    <a href="/blog/" class="{% if page.url != '/' %}active{% endif %}">Write-Ups</a>
   </nav>
   {{ content | safe }}
   <script>

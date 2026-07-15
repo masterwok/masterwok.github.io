@@ -248,6 +248,11 @@ ul.flat li {
   color: #ccc;
 }
 
+.site-nav a.active {
+  border-bottom: 2px solid #4b0082;
+  padding-bottom: 2px;
+}
+
 .post-meta {
   color: #666;
   font-size: 0.85rem;
