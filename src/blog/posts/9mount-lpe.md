@@ -1,6 +1,6 @@
 ---
 title: "Linux Privilege Escalation via 9mount"
-date: 2026-07-13
+date: 2026-07-15
 description: "How two user-controlled 9mount flags combine with debugfs to escalate from an unprivileged user to root."
 image: /img/plan9.png
 ---
@@ -243,7 +243,7 @@ nodes in the VFS, backed by any device on the system, via a root-level mount cal
 ## Timeline
 
 - 6/01/26 - Debian ships an independent partial fix, [`1.3+hg20170412-3`](https://salsa.debian.org/debian/9mount/-/blob/debian%2F1.3%2Bhg20170412-3/debian/patches/security-fix-when-passing-nodev-and-nosu.patch), credited to Georgii Shutiaev, wiring `nodev`/`nosuid` into `mount()`'s flags for the default, no-flags case. Does not affect the `-v -u` chain in this post.
-- 6/05/26 - Reported this exploit chain (`-v`/`-u` combined with `debugfs`) to the `9mount` upstream maintainer
+- 6/05/26 - Reported this exploit chain (`-v`/`-u` combined with `debugfs`), present in upstream commit [`ef2a2a0`](https://github.com/sqweek/9mount/tree/ef2a2a0d82235e8163ccec319710f63f95b57fb6) (the same version shipped as Debian's `1.3+hg20170412-2`)
 - 6/12/26 - Maintainer pushes fix [`220d490751cd068790ade5723969b8b3af2a2871`](https://github.com/sqweek/9mount/commit/220d490751cd068790ade5723969b8b3af2a2871), gating `nodev`/`nosuid` to root regardless of flags passed
 - 6/13/26 - Maintainer pushes [`1.5`](https://github.com/sqweek/9mount/tree/1.5) release
 - 6/29/26 - Maintainer approves publishing findings
