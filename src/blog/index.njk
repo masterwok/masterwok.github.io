@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Blog | Jonathan Trowbridge
+---
+<div class="section">
+  <h2>BLOG</h2>
+  {% set posts = collections.post | reverse %}
+  {% if posts.length %}
+  <ul class="flat">
+    {% for post in posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <span class="post-date">{{ post.date | readableDate }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endif %}
+</div>

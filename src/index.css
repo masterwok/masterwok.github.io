@@ -59,11 +59,11 @@ body {
   line-height: 1;
 }
 
-.social-container img {
+.social-container img,
+.social-container svg {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 .email {
@@ -236,4 +236,60 @@ ul.flat {
 
 ul.flat li {
   margin-bottom: 1em;
+}
+
+.site-nav {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.nav-sep {
+  margin: 0 0.4rem;
+  color: #ccc;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.post-date {
+  display: block;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.post-content hr {
+  margin: 2rem 0;
+}
+
+.code-embed {
+  margin: 1.5rem 0;
+}
+
+.code-embed pre {
+  margin: 0;
+}
+
+.code-embed figcaption {
+  font-size: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.post-content img {
+  max-width: 100%;
+}
+
+.post-content pre[class*="language-"] {
+  border-radius: 4px;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+.post-content code:not([class*="language-"]) {
+  background: #f0f0f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
 }

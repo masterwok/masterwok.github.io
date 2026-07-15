@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="{{ 'article' if date else 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if description %}
+  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta name="twitter:description" content="{{ description }}">
+  {% endif %}
+  {% if image %}
+  <meta property="og:image" content="{{ site.url }}{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ image }}">
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body class="container">
+  <nav class="site-nav">
+    <a href="/">Resume</a>
+    <span class="nav-sep">|</span>
+    <a href="/blog/">Blog</a>
+  </nav>
+  {{ content | safe }}
+  <script>
+    console.log(` + "`" + `
+ __________________________________________________
+/ You can find the repo here:                      \\
+| https://github.com/masterwok/masterwok.github.io |
+\\_________________________________________________/
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     ||
+` + "`" + `);
+  </script>
+</body>
+</html>

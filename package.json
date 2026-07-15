@@ -5,14 +5,16 @@
   "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --config webpack.config.cjs --host 0.0.0.0",
-    "build": "webpack --config webpack.config.cjs"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "autoprefixer": "^10.4.21",
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
