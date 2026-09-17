@@ -5,8 +5,6 @@ description: "How two user-controlled 9mount flags combine with debugfs to escal
 image: /img/plan9.png
 ---
 
-![Plan 9 from User Space](/img/plan9.png)
-
 I spent some time last month writing scripts to scan the Debian archive en masse in hopes of
 finding vulnerable software. One of these scripts simply flagged packages that install SUID/SGID binaries 
 and reported findings. While debugging the script after a quick run, I noticed a 
